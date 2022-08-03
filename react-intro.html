@@ -1,0 +1,16 @@
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+<div id="root" style="border:solid;padding: 30px;"></div>
+
+
+<script>
+    var h1tag = React.createElement('h1',null,'Intro Of React');
+    console.log(h1tag);
+    
+    var targetElement = ReactDOM.createRoot(document.getElementById('root'));
+    console.log(targetElement);
+
+    targetElement.render(h1tag);
+</script>
